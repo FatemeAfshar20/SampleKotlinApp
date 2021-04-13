@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.utab.samplekotlinapp.view.selectUserFragment.SelectUserVm" />
+        <variable
+            name="fragment"
+            type="com.utab.samplekotlinapp.view.selectUserFragment.SelectUserFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text='@{"Hello Dear "+viewModel.userName()+" !"}'
+            android:textSize="15sp"
+            android:textColor="#FF9800"
+            android:background="@drawable/bg_border_black"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_one"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_one"
+            android:textAllCaps="false"
+            android:onClick="@{()->viewModel.onUserOneBtnClickListener()+fragment.onBtnClickListener()}"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_two"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_two"
+            android:textAllCaps="false"
+            android:onClick="@{()->viewModel.onUserTwoBtnClickListener()+fragment.onBtnClickListener()}"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_three"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_three"
+            android:textAllCaps="false"
+            android:onClick="@{()->viewModel.onUserThreeBtnClickListener()+fragment.onBtnClickListener()}"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_four"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_four"
+            android:textAllCaps="false"
+            android:onClick="@{()->viewModel.onUserFourBtnClickListener()+fragment.onBtnClickListener()}"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_user_five"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_five"
+            android:textAllCaps="false"
+            android:onClick="@{()->viewModel.onUserFiveBtnClickListener()+fragment.onBtnClickListener()}"
+            />
+
+    </LinearLayout>
+</layout>

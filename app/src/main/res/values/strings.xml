@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SampleKotlinApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_wait">Please Wait!!!</string>
+    <string name="user_name">user name</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">email</string>
+    <string name="job">job</string>
+    <string name="user_one">User one</string>
+    <string name="user_two">User two</string>
+    <string name="user_three">User three</string>
+    <string name="user_four">User four</string>
+    <string name="user_five">User five</string>
+</resources>
